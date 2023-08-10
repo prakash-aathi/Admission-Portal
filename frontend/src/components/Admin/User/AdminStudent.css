@@ -1,0 +1,653 @@
+/* popup css */
+.admin-popup-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.admin-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.533);
+  z-index: -1;
+}
+
+.admin-student-popup {
+  background-color: #e5e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.admin-student-popup h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.admin-student-popup button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-student-popup .admin-student-confirm-btn {
+  background-color: #2A7230;
+  color: #fff;
+}
+
+.admin-student-popup .admin-student-confirm-btn:hover {
+  background-color: #3e9746;
+  transform: scale(1.05);
+}
+
+
+.admin-student-popup .admin-student-cancel-btn {
+  background-color: #E62020;
+  color: #fff;
+}
+
+.admin-institute-popup .admin-student-cancel-btn:hover {
+  background-color: #f24747;
+  transform: scale(1.05);
+}
+
+/* Back to home css */
+.back-to-home {
+  margin-left: 5px;
+  background-color: #fff;
+  border: 2px solid #2A7230;
+  color: #2A7230;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  margin-top: 90px;
+}
+
+.back-to-home:hover {
+  background-color: #2A7230;
+  color: #fff;
+}
+
+
+/* search bar css */
+.admin-search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+
+}
+
+.search-input {
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 10px;
+  width: 35%;
+}
+
+.search-btn {
+  margin-bottom: 20px;
+  background-color: #2A7230;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  padding: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+  background-color: #3e9746;
+}
+
+
+/* student information css */
+.student-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2A7230;
+}
+
+.edit-btn {
+  color: #2A7230;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #2A7230;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.delete-btn {
+  color: #E62020;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #E62020;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  color: #3e9746;
+  background-color: #d1e7d6;
+  border-color: #3e9746;
+}
+
+.delete-btn:hover {
+  color: #f24747;
+  background-color: #f1c6c5;
+  border-color: #f24747;
+}
+
+.admin-student-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.admin-student-th,
+.admin-student-td {
+  text-align: left;
+  padding: 12px;
+  width: 20%;
+}
+
+.admin-student-th {
+  background-color: rgb(167, 167, 167);
+  color: white;
+}
+
+.student-display-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.student-card-info {
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for student card */
+.student-card-info:hover {
+  background-color: #e9ecef;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -5px);
+}
+
+
+/* add student btn */
+
+
+.admin-add-student-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 0 5px;
+  background: #2A7230;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.admin-add-student-button:hover {
+  width: 165px;
+}
+
+.admin-add-student-button .admin-add-student-icon {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.admin-add-student-button .admin-add-student-icon i {
+  font-size: 25px;
+  line-height: 60px;
+  color: white;
+}
+
+.admin-add-student-button:hover::after {
+  content: "Add Student";
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 100px;
+  height: 60px;
+  background: #2A7230;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 0 50px 50px 0;
+}
+
+/* add student form css */
+.student-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  /* margin: 20px; */
+}
+
+.head-container {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.9rem;
+  color: #555;
+}
+
+.studentform {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* padding: 30px; */
+  width: 100%;
+}
+
+.form-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form__input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form__input:focus {
+  border-color: #4CAF50;
+}
+
+.address-container {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 100%
+}
+
+.address-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.address-container .address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.address-container label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.address-container input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  transition: border-color 0.2s ease-in-out;
+}
+
+
+.address-container input:focus {
+  border-color: #4CAF50;
+}
+
+.username,
+.mobile,
+.SSLC,
+.HSC,
+.diploma,
+.emailId,
+.eligibility,
+.courseId,
+.instituteId,
+.studentDob {
+  width: 48%;
+}
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.admin-student-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 70%;
+}
+
+.add-student-btn,
+.admin-btn-secondary {
+
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.add-student-btn {
+  background-color: #2A7230;
+  color: #fff;
+  margin-right: 20px;
+
+}
+
+.admin-btn-secondary {
+  background-color: #fff;
+  color: #2A7230;
+  border: 2px solid #2A7230;
+
+}
+
+.add-student-btn:hover,
+.admin-btn-secondary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 820px) {
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .search-btn {
+    margin-left: 0;
+    width: 50%;
+  }
+
+  .student-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .admin-student-th,
+  .admin-student-td {
+    padding: 2px;
+    font-size: 11px;
+    padding-left: 5px;
+  }
+
+  .admin-student-th {
+    font-size: 1rem;
+  }
+
+  .admin-add-student-button {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .admin-add-student-button .admin-add-student-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .admin-add-student-button .admin-add-student-icon i {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .admin-add-student-button:hover::after {
+    left: 40px;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 35px;
+    font-size: 11px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+  }
+
+  .add-student-btn,
+  .admin-btn-secondary {
+
+    font-size: 0.9rem;
+    margin-left: 0;
+
+  }
+}
+
+@media (max-width: 1228px) {
+
+  .add-student-btn,
+  .admin-btn-secondary {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+@media (max-width: 1107px) {
+
+
+  .add-student-btn,
+  .admin-btn-secondary {
+    font-size: 0.8rem;
+  }
+
+
+}
+
+
+@media (max-width:300px) {
+  .admin-student-th {
+    font-size: 0.5rem;
+  }
+}
+
+
+/* loader css start */
+@keyframes ldio-14cancim8ocq {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.ldio-14cancim8ocq div {
+  box-sizing: border-box !important
+}
+
+.ldio-14cancim8ocq>div {
+  position: absolute;
+  width: 166.97px;
+  height: 166.97px;
+  top: 58.015px;
+  left: 58.015px;
+  border-radius: 50%;
+  border: 14.15px solid #000;
+  border-color: #0055a5 transparent #0055a5 transparent;
+  animation: ldio-14cancim8ocq 1.36986301369863s linear infinite;
+}
+
+.ldio-14cancim8ocq>div:nth-child(2),
+.ldio-14cancim8ocq>div:nth-child(4) {
+  width: 133.01px;
+  height: 133.01px;
+  top: 74.995px;
+  left: 74.995px;
+  animation: ldio-14cancim8ocq 1.36986301369863s linear infinite reverse;
+}
+
+.ldio-14cancim8ocq>div:nth-child(2) {
+  border-color: transparent #45aee7 transparent #45aee7
+}
+
+.ldio-14cancim8ocq>div:nth-child(3) {
+  border-color: transparent
+}
+
+.ldio-14cancim8ocq>div:nth-child(3) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+}
+
+.ldio-14cancim8ocq>div:nth-child(3) div:before,
+.ldio-14cancim8ocq>div:nth-child(3) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14.15px;
+  height: 14.15px;
+  top: -14.15px;
+  left: 62.260000000000005px;
+  background: #0055a5;
+  border-radius: 50%;
+  box-shadow: 0 152.82px 0 0 #0055a5;
+}
+
+.ldio-14cancim8ocq>div:nth-child(3) div:after {
+  left: -14.15px;
+  top: 62.260000000000005px;
+  box-shadow: 152.82px 0 0 0 #0055a5;
+}
+
+.ldio-14cancim8ocq>div:nth-child(4) {
+  border-color: transparent;
+}
+
+.ldio-14cancim8ocq>div:nth-child(4) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+}
+
+.ldio-14cancim8ocq>div:nth-child(4) div:before,
+.ldio-14cancim8ocq>div:nth-child(4) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14.15px;
+  height: 14.15px;
+  top: -14.15px;
+  left: 45.28px;
+  background: #45aee7;
+  border-radius: 50%;
+  box-shadow: 0 118.86px 0 0 #45aee7;
+}
+
+.ldio-14cancim8ocq>div:nth-child(4) div:after {
+  left: -14.15px;
+  top: 45.28px;
+  box-shadow: 118.86px 0 0 0 #45aee7;
+}
+
+.loadingio-spinner-double-ring-amot1w4ku1j {
+  width: 283px;
+  height: 283px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+
+.ldio-14cancim8ocq {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */
+  box-sizing: content-box;
+}
+
+/* loader css end */
