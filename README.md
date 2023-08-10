@@ -3,6 +3,10 @@
 The PG Admission Portal is a web application that facilitates the seamless connection between colleges and students for the purpose of admission into postgraduate programs. The application is designed to provide users with an easy-to-use interface, making the admission process smooth and efficient.
 
 
+## Video
+
+https://www.loom.com/share/582381dd0fe14a718c50de6da8e26e81?sid=11e8ebd3-cc06-4ce5-8e07-9b3205138e9f
+
 ## Features
 
 
