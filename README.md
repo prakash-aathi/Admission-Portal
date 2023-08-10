@@ -83,17 +83,6 @@ For documentation, the backend enables Swagger, so after running the project, vi
 
 [Documentation](http://localhost:8080/swagger-ui/index.html#/)
 
-## Authors
-
-- [@Prakash](https://www.linkedin.com/in/prakash971/)
-- [@saivigneesh456](https://github.com/saivigneesh456)
-- [@shaiksafeena](https://github.com/shaiksafeena)
-- [@AdapaYashaswi](https://github.com/AdapaYashaswi)
-- [@KallipudiGowtham](https://github.com/KallipudiGowtham)
-- [@sairaghavboggarapu](https://github.com/sairaghavboggarapu)
-- [@Vishva1808](https://github.com/Vishva1808)
-- [@SharavananS06](https://github.com/SharavananS06)
-
 
 ## Contributing
 
